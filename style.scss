@@ -1,0 +1,97 @@
+body,
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+div {
+    background: aqua;
+    border: solid white;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    gap: .2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 2fr 1fr 2fr .75fr .25fr;
+    grid-template-areas:
+        "nav"
+        "hero"
+        "hello"
+        "events"
+        "gallery"
+        "footer";
+
+    >div {
+        padding-top: 5px;
+    }
+}
+
+#navbar,
+.menu,
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    >div {
+        margin-left: 10px;
+    }
+}
+
+#navbar {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    margin-left: 5px;
+}
+
+#hero {
+    grid-area: hero;
+    
+}
+
+#hello {
+    grid-area: hello;
+}
+
+#events {
+    grid-area: events;
+}
+
+#gallery {
+    grid-area: gallery;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+@media (min-width: 500px) {
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #navbar {
+        >div {
+            >div {
+                margin: 0px 15px;
+            }
+        }
+    }
+
+    .menu,
+    #navbar {
+        align-items: center;
+        margin: 0;
+    }
+
+}
