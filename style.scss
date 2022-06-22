@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 $primary: #f25622;
 $font-color: white;
+$Grey: #828282;
 $cursive: 'Parisienne';
-$regular: 'Joan';
+$regular: 'Poppins';
 
 body,
 html {
@@ -32,17 +33,16 @@ html {
     justify-content: center;
     gap: 25px;
     color: $font-color;
-    
 }
 
-.signature{
+.signature {
     font-family: $cursive;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
-.tagline{
+.tagline {
     font-family: $regular;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .countdown-timer {
@@ -62,14 +62,45 @@ html {
     }
 }
 
-
 .time {
     background-color: $primary;
     border-radius: 50%;
     width: 50px;
     min-height: 50px;
+    font-weight: 900;
+
 }
 
+.text-section {
+    @extend .countdown-timer;
+    flex-direction: column;
+    gap: 10px;
+    font-family: $regular;
+}
+
+.intro {
+    @extend .signature;
+    color: $primary;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+.date {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.second-tagline {
+    color: $Grey;
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.paragraph {
+    padding: 0px 20px;
+    font-weight: 100;
+}
 
 @media (min-width: 500px) {
     .hero {

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body,
 html {
   margin: 0;
@@ -9,7 +9,7 @@ html {
 
 .navbar {
   padding: 0;
-  font-family: "Joan";
+  font-family: "Poppins";
 }
 
 .hero {
@@ -29,25 +29,25 @@ html {
   color: white;
 }
 
-.signature {
+.signature, .intro {
   font-family: "Parisienne";
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .tagline {
-  font-family: "Joan";
-  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-size: 1rem;
 }
 
-.countdown-timer, .countdown-timer > div > div {
+.countdown-timer, .text-section, .text-section > div > div, .countdown-timer > div > div, .text-section > div > div > div > div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
 
-.countdown-timer > div > div, .countdown-timer > div > div > div > div {
-  font-family: "Joan";
+.countdown-timer > div > div, .text-section > div > div, .text-section > div > div > div > div, .countdown-timer > div > div > div > div, .text-section > div > div > div > div > div > div {
+  font-family: "Poppins";
   gap: 0px;
 }
 
@@ -56,6 +56,36 @@ html {
   border-radius: 50%;
   width: 50px;
   min-height: 50px;
+  font-weight: 900;
+}
+
+.text-section {
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Poppins";
+}
+
+.intro {
+  color: #f25622;
+  padding-top: 50px;
+  font-weight: 900;
+}
+
+.date {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.second-tagline {
+  color: #828282;
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.paragraph {
+  padding: 0px 20px;
+  font-weight: 100;
 }
 
 @media (min-width: 500px) {
