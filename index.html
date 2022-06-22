@@ -6,29 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hawaiian Wedding</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    
+
     <link rel="stylesheet" href="./style.css">
     <script src="./scripts.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <div id="navbar">
-            <div class="logo">
-                <div>Logo</div>
-            </div>
-            <div class="menu">
-                <div><a href="#hero">Home</a></div>
-                <div><a href="#hello">Hello</a></div>
-                <div><a href="#events">Wedding Events</a></div>
-                <div> <a href="#gallery">Gallery</a></div>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-light px-sm-5 px-3">
+        <span class="navbar-brand">
+            <img class="d-inline-block align-top" sizes="(max-width: 697px) 100vw, 697px" srcset="
+            ./Images/logo_mmhmrs/logo_mmhmrs_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w,
+            ./Images/logo_mmhmrs/logo_mmhmrs_ar_1_1,c_fill,g_auto__c_scale,w_697.png 697w"
+                src="./Images/logo_mmhmrs/logo_mmhmrs_ar_1_1,c_fill,g_auto__c_scale,w_697.png" alt="" width="75">
+        </span>
+        <button 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        class="navbar-toggler"
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#home" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        Hello
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        Wedding Events
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        Gallery
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div id="hero">Hero</div>
-        <div id="hello">hello</div>
-        <div id="events">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar ornare euismod. Donec eu nunc gravida, dapibus dui sed, varius odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut pharetra sem ac leo iaculis faucibus. Sed laoreet eros in velit rutrum rutrum. Morbi tempor, ipsum nec aliquam fermentum, dui ante faucibus velit, eu consequat nunc ex tincidunt mauris. Nulla eu est eget orci cursus pulvinar. Vivamus at malesuada tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum sem neque. Donec accumsan iaculis felis ac placerat. Nunc in neque consequat, elementum arcu et, iaculis enim. Curabitur sollicitudin bibendum purus eu lacinia. Praesent at dolor vitae augue venenatis semper in non orci.</div>
-        <div id="gallery">gallery</div>
-        <div id="footer">footer</div>
-    </div>
+    </nav>
+    <div id ="home" class="container-fluid hero"></div>
+    
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 </html>
