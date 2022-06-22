@@ -76,13 +76,13 @@ html {
     flex-direction: column;
     gap: 10px;
     font-family: $regular;
-    padding-bottom: 50px;
+    padding: 50px 15px 50px 15px;
 }
 
 .intro {
     @extend .signature;
     color: $primary;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     font-weight: 900;
 }
 
@@ -101,11 +101,12 @@ html {
 .paragraph {
     padding: 0px 20px;
     font-weight: 100;
+    margin-top: 30px;
 }
 
 .event-section {
     padding: 0;
-    background-image: url("./Images/Cell-Luau.jpg");
+    background-image: url("./Images/Cell-Oahu.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,6 +126,7 @@ html {
         width: 300px;
         height: 400px;
         background-color: rgba(255, 255, 255, .55);
+        border: solid $Grey;
         color: $primary;
         font-family: $regular;
         display: flex;
@@ -147,6 +149,15 @@ html {
     }
 
     .event-section {
-        background-image: url("./Images/Desktop-Luau.JPG");
+        background-image: url("./Images/Oahu.jpg");
+    }
+
+    .text-section {
+        @extend .countdown-timer;
+        padding: 50px 200px 50px 200px;
+    }
+
+    .event-list{
+        padding: 50px 160px;
     }
 }

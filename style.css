@@ -63,12 +63,12 @@ html {
   flex-direction: column;
   gap: 10px;
   font-family: "Poppins";
-  padding-bottom: 50px;
+  padding: 50px 15px 50px 15px;
 }
 
 .intro {
   color: #f25622;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   font-weight: 900;
 }
 
@@ -87,11 +87,12 @@ html {
 .paragraph {
   padding: 0px 20px;
   font-weight: 100;
+  margin-top: 30px;
 }
 
 .event-section {
   padding: 0;
-  background-image: url("./Images/Cell-Luau.jpg");
+  background-image: url("./Images/Cell-Oahu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,6 +112,7 @@ html {
   width: 300px;
   height: 400px;
   background-color: rgba(255, 255, 255, 0.55);
+  border: solid #828282;
   color: #f25622;
   font-family: "Poppins";
   display: flex;
@@ -130,7 +132,13 @@ html {
     background-image: url("./Images/Desktop-Hero.jpg");
   }
   .event-section {
-    background-image: url("./Images/Desktop-Luau.JPG");
+    background-image: url("./Images/Oahu.jpg");
+  }
+  .text-section {
+    padding: 50px 200px 50px 200px;
+  }
+  .event-list {
+    padding: 50px 160px;
   }
 }
 
