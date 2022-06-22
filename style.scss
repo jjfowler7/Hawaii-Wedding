@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
 $primary: #f25622;
+$font-color: white;
+$cursive: 'Parisienne';
+$regular: 'Joan';
 
 body,
 html {
@@ -9,10 +14,11 @@ html {
 
 .navbar {
     padding: 0;
+    font-family: $regular;
 }
 
 .hero {
-    background-image: url("./Images/Desktop-Hero.jpg");
+    background-image: url("./Images/Cell-Hero.jpg");
     /* Set a specific height */
     height: 90vh;
     /* Position and center the image to scale nicely on all screens */
@@ -20,20 +26,38 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 25px;
+    color: $font-color;
+    
 }
 
-.container-fluid {
+.signature{
+    font-family: $cursive;
+    font-size: 2.5rem;
+}
+
+.tagline{
+    font-family: $regular;
+    font-size: 1.2rem;
+}
+
+.countdown-timer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 
-.hero {
+.countdown-timer {
     >div {
         >div {
-            @extend .container-fluid;
-            color: white;
+            @extend .countdown-timer;
+            font-family: $regular;
+            gap: 0px;
         }
     }
 }
@@ -43,12 +67,12 @@ html {
     background-color: $primary;
     border-radius: 50%;
     width: 50px;
-    height: 50px;
+    min-height: 50px;
 }
 
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
     .hero {
-        background-image: url("./Images/Cell-Hero.jpg");
+        background-image: url("./Images/Desktop-Hero.jpg");
     }
 }
