@@ -115,6 +115,8 @@ html {
   border: solid #828282;
   color: #f25622;
   font-family: "Poppins";
+  font-weight: 900;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   padding: 15px;
