@@ -127,15 +127,44 @@ html {
         height: 400px;
         background-color: rgba(255, 255, 255, .55);
         border: solid $Grey;
-        color: $primary;
         font-family: $regular;
-        font-weight: 900;
-        font-size: 1.2rem;
         display: flex;
         justify-content: center;
-        padding: 15px;
-
+        padding: 5px;
     }
+}
+
+.event-list{
+    >div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 900;
+    } 
+}
+
+.title{
+    color: $primary;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.sub-title{
+    padding-bottom: 50px;
+    font-weight: 700;
+}
+
+.date-time{
+    font-weight:700;
+}
+
+.details{
+    font-size: 1rem;
+    font-weight:400;
 }
 
 .footer {
