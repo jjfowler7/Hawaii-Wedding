@@ -111,6 +111,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    .intro{
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+    }
 }
 
 .event-list {
@@ -131,19 +137,12 @@ html {
         display: flex;
         justify-content: center;
         padding: 5px;
-    }
-}
-
-.event-list{
-    >div{
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items:center;
-        justify-content: center;
         text-align: center;
         font-weight: 900;
-    } 
+    }
 }
 
 .title{
@@ -189,6 +188,6 @@ html {
     }
 
     .event-list{
-        padding: 50px 160px;
+        padding: 30px 160px;
     }
 }
